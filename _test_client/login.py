@@ -8,3 +8,9 @@ response = requests.post(
 )
 # displaying json reponse from the API
 print(response.json())
+
+
+# print("=== checking for logged in state ===")
+
+# logged_in_response = requests.get(login_endpoint)
+# print(logged_in_response.json())
