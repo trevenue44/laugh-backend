@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "api",
     "accounts",
+    "jokes",
 ]
 
 AUTH_USER_MODEL = "accounts.Laugher"
