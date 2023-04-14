@@ -14,7 +14,7 @@ class TestSetUp(APITestCase):
         fake_profile = self.fake.simple_profile()
         self.user_data = {
             "username": fake_profile["username"],
-            "password": fake_profile["mail"],
+            "password": self.fake.password(length=10),
         }
 
         return super().setUp()
