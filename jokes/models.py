@@ -12,7 +12,7 @@ class Joke(models.Model):
     content = models.CharField(max_length=125)
     date_published = models.DateTimeField(auto_now_add=True, blank=True)
     # the laughers who laughed at the joke. Number of laughs
-    laughs = models.ManyToManyField(Laugher, blank=True, related_name="laughs")
+    laughed_at_by = models.ManyToManyField(Laugher, blank=True, related_name="laughs")
 
     def __str__(self) -> str:
         return self.content
