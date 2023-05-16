@@ -6,7 +6,7 @@ from accounts.models import Laugher
 # Create your models here.
 class Joke(models.Model):
     # the person who published the joke
-    laugher = models.ForeignKey(Laugher, on_delete=models.CASCADE)
+    laugher = models.ForeignKey(Laugher, on_delete=models.CASCADE, related_name="jokes")
 
     # the content of the joke
     content = models.CharField(max_length=125)
